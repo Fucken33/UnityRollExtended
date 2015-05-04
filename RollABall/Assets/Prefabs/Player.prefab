@@ -13,10 +13,9 @@ GameObject:
   - 54: {fileID: 5409324}
   - 135: {fileID: 13596924}
   - 114: {fileID: 11442688}
-  - 114: {fileID: 11468060}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,17 +93,6 @@ MonoBehaviour:
   countText: {fileID: 0}
   winText: {fileID: 0}
   joystick: {fileID: 0}
---- !u!114 &11468060
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 170018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18a80cca14b73eb44b40e8a2a0a8aa56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &13596924
 SphereCollider:
   m_ObjectHideFlags: 1

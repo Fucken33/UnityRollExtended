@@ -30,8 +30,9 @@ public class PlayerController : MonoBehaviour
     {
         updateAxes();
         Vector3 movement = new Vector3(horizontalAxe, 0, verticalAxe);
+        movement = Camera.main.transform.TransformDirection(movement);
         body.AddForce(movement * speed);
-        
+
         if (transform.position.y < -50)
             Application.LoadLevel(Application.loadedLevel);
     }
@@ -39,7 +40,7 @@ public class PlayerController : MonoBehaviour
     void updateAxes()
     {
         Vector2 axes;
-        if (Application.platform == RuntimePlatform.IPhonePlayer || Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.WindowsEditor)
+        if (Application.platform == RuntimePlatform.IPhonePlayer || Application.platform == RuntimePlatform.Android)// || Application.platform == RuntimePlatform.WindowsEditor)
         {
             axes = joystick.joystickAxes;
         }
@@ -74,5 +75,15 @@ public class PlayerController : MonoBehaviour
         {
             winText.text = "Level Clear";
         }
+    }
+
+    public int getPickUpCount()
+    {
+        return pickUpCount;
+    }
+
+    public int getPickUpNum()
+    {
+        return totalPickUpCount;
     }
 }

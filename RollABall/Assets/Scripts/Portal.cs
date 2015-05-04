@@ -7,7 +7,13 @@ public class Portal : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Application.LoadLevel(sceneName);
+        StartCoroutine("OnPortal");
     }
 
+    IEnumerator OnPortal()
+    {
+        float fadeTime = GetComponent<Fading>().BeginFade(1);
+        yield return new WaitForSeconds(fadeTime);
+        Application.LoadLevel(sceneName);
+    }
 }

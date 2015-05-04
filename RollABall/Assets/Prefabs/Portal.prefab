@@ -41,6 +41,7 @@ GameObject:
   - 4: {fileID: 409346}
   - 65: {fileID: 6587230}
   - 114: {fileID: 11457720}
+  - 114: {fileID: 11489780}
   m_Layer: 0
   m_Name: LevelEnd
   m_TagString: Level End
@@ -3118,6 +3119,19 @@ MonoBehaviour:
   isSelectable: 1
   _name: Plane
   dontDestroyMeshOnDelete: 0
+--- !u!114 &11489780
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3abe8e8b8c5baa44c9579533bfccb3a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTexture: {fileID: 2800000, guid: b0858b6361c3d8b4c94a6c03fffaa268, type: 3}
+  fadeSpeed: .800000012
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

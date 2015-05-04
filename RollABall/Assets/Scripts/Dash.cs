@@ -16,7 +16,6 @@ public class Dash : MonoBehaviour
 
     void OnCollisionEnter(Collision collisionData)
     {
-        Debug.Log("red cube colliding with " + collisionData.gameObject.name);
         collisionData.rigidbody.AddForce(dashForce, ForceMode.VelocityChange);
     }
 

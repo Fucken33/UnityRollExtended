@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 411518}
   - 33: {fileID: 3340324}
-  - 65: {fileID: 6513412}
   - 23: {fileID: 2383470}
+  - 65: {fileID: 6513412}
   - 114: {fileID: 11486758}
   m_Layer: 0
   m_Name: Impulsor
